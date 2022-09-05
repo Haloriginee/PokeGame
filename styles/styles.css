@@ -31,6 +31,38 @@ i {
     cursor: pointer;
 }
 
+.title {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.phokingdex {
+  text-decoration: none;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: #ddd;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid ;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.phokingdex:hover {
+  background-color: #ffcb05;
+}
+
 /* Module */
 
 .wrapper {
