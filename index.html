@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>PokeGame</title>
+</head>
+
+<body>
+    <audio id="music">
+        <source src="pokemon.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="catch">
+        <source src="catch.mp3" type="audio/mpeg">
+    </audio>
+    <div class="wrapper">
+        <div id="options" class="options">
+            <div class="option-wrapper">
+                <p>Time</p>
+                <div id="timer" class="timer">0:00</div>
+            </div>
+            <div class="option-wrapper">
+                <p>Guesses</p>
+                <div id="guesses" class="guesses"></div>
+            </div>
+            <div class="option-wrapper">
+                <p>Difficulty</p>
+                <div id="difficulty" class="difficulty">
+                    <span id="easy" class="btn easy"></span>
+                    <span id="medium" class="btn medium"></span>
+                    <span id="hard" class="btn hard"></span>
+                    <span id="master" class="btn master"></span>
+                </div>
+            </div>
+
+            <div class="option-wrapper">
+                <div id="musicToggle">
+                    <i id="musicOn" class="fas fa-pause"></i>
+                    <i id="musicOff" class="fas fa-play"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="game">
+            <section id="grid" class="grid">
+            </section>
+        </div>
+        <div id="scoreboard">
+            <table id="table">
+
+            </table>
+        </div>
+    </div>
+    <script src="js/pokemon.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyAw9mSWNhVXWxfy5G6xxkgAsMoFG7FWCjI",
+          authDomain: "memory-game-5bdeb.firebaseapp.com",
+          databaseURL: "https://memory-game-5bdeb.firebaseio.com",
+          projectId: "memory-game-5bdeb",
+          storageBucket: "",
+          messagingSenderId: "916193554567"
+      };
+      firebase.initializeApp(config);
+  </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
